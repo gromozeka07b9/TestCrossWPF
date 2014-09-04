@@ -1,0 +1,13 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Q4EIQSVCNBG6D6ZL" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppAndroid/MainActivity.cs">
+    <Files>
+      <File FileName="PortableCodeLib/MyClass.cs" Line="22" Column="22" />
+      <File FileName="AppAndroid/MainActivity.cs" Line="15" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
