@@ -11,19 +11,16 @@ namespace SharedCodeLib
         {
             get{
                 string Os = string.Empty;
-/*#if __ANDROID__
-                Os = "Android";
-#elif __IOS__
-                Os = "Ios";
-#elif __WINDOWS_PHONE__
-                Os = "WinPhone";
-#else
-                Os = "WPF";
-#endif*/
 #if __ANDROID__
                 Os = "Android";
 #endif
-                if (Os != "Android") Os = "WPF";
+#if __IOS__
+				Os = "IOS";
+#endif
+#if __WINDOWS_PHONE__
+				Os = "WinPhone";
+#endif
+				if (string.IsNullOrEmpty(Os)) Os = "WPF";
                 return Os;
             }
         }
