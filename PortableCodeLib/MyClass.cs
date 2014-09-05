@@ -12,6 +12,11 @@ namespace PortableCodeLib
 		{
 			return "teststring";
 		}
+
+        public static string GetPlatformName()
+        {
+            return SharedCodeLib.TestClass.OSName;
+        }
 	}
 }
 

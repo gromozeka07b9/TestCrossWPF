@@ -93,12 +93,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PortableCodeLib\PortableCodeLib.csproj">
-      <Project>{85b5b223-364a-4073-b2e7-ee8fb709c6bb}</Project>
-      <Name>PortableCodeLib</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <Import Project="..\SharedCodeLib\SharedCodeLib\SharedCodeLib.projitems" Label="Shared" Condition="Exists('..\SharedCodeLib\SharedCodeLib\SharedCodeLib.projitems')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

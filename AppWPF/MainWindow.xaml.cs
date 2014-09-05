@@ -27,7 +27,10 @@ namespace AppWPF
 
         private void Window_Activated(object sender, EventArgs e)
         {
-            GridControl.Children.Add(new Button() { Content = PortableCodeLib.MyClass.GetTestString() });
+            //string platform = PortableCodeLib.MyClass.GetPlatformName();
+            string platform = SharedCodeLib.TestClass.OSName;
+
+            GridControl.Children.Add(new Button() { Content = platform });
             
         }
     }

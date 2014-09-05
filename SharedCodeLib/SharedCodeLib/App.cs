@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Xamarin.Forms;
+//using Xamarin.Forms;
 
 namespace SharedCodeLib
 {
-	public class App
+	/*public class App
 	{
 		public static Page GetMainPage()
 		{
@@ -17,8 +17,10 @@ namespace SharedCodeLib
 					Text = "Hello, Forms !",
 					VerticalOptions = LayoutOptions.CenterAndExpand,
 					HorizontalOptions = LayoutOptions.CenterAndExpand,
-				},
+				}
+                
+                
 			};
 		}
-	}
+	}*/
 }

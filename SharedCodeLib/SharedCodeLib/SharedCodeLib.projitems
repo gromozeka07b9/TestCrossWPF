@@ -13,6 +13,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)TestClass.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PRIResource Include="$(MSBuildThisFileDirectory)Resources.resw" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources.resw" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -58,11 +58,6 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
   </ItemGroup>
+  <Import Project="..\SharedCodeLib\SharedCodeLib\SharedCodeLib.projitems" Label="Shared" Condition="Exists('..\SharedCodeLib\SharedCodeLib\SharedCodeLib.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\PortableCodeLib\PortableCodeLib.csproj">
-      <Project>{85B5B223-364A-4073-B2E7-EE8FB709C6BB}</Project>
-      <Name>PortableCodeLib</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>

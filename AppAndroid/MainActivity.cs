@@ -24,9 +24,12 @@ namespace AppAndroid
 			// Get our button from the layout resource,
 			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.myButton);
-			button.Text = PortableCodeLib.MyClass.GetTestString ();
+            string platform = SharedCodeLib.TestClass.OSName;
+            //string platform = PortableCodeLib.MyClass.GetPlatformName();
+            //button.Text = PortableCodeLib.MyClass.GetTestString() + ", platform:" + platform;
+            button.Text = platform;
 			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks!", count++);
+				button.Text = string.Format ("{0} clicks! test", count++);
 			};
 		}
 	}
