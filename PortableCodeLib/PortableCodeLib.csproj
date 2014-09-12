@@ -75,9 +75,6 @@
     <Reference Include="System.Threading.Tasks">
       <HintPath>..\packages\Microsoft.Bcl.1.1.7\lib\portable-net40+sl5+win8+wp8+wpa81\System.Threading.Tasks.dll</HintPath>
     </Reference>
-    <Reference Include="System.Xml.XmlSerializer">
-      <HintPath>..\..\..\Program Files %28x86%29\Microsoft .NET Portable Library Reference Assemblies 4.6\v4.6\System.Xml.XmlSerializer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Runtime.Serialization" />
