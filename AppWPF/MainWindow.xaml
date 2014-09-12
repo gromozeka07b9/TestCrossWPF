@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525" Activated="Window_Activated">
     <Grid x:Name="GridControl">
+        <Label x:Name="LabResult" Loaded="LabResult_Loaded"></Label>
         
     </Grid>
 </Window>

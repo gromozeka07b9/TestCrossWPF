@@ -14,7 +14,7 @@ namespace AppAndroid
 	{
 		int count = 1;
 
-		protected override void OnCreate (Bundle bundle)
+		protected override async void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 
@@ -24,14 +24,24 @@ namespace AppAndroid
 			// Get our button from the layout resource,
 			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.myButton);
-            string platform = SharedCodeLib.TestClass.OSName;
+            //string platform = SharedCodeLib.TestClass.OSName;
             //string platform = PortableCodeLib.MyClass.GetPlatformName();
             //button.Text = PortableCodeLib.MyClass.GetTestString() + ", platform:" + platform;
-            button.Text = platform;
+            PortableCodeLib.MyClass portableclass = new PortableCodeLib.MyClass();
+            byte[] i = await portableclass.TestCallAsync();
+
+            string result = System.Text.Encoding.UTF8.GetString(i);
+
+            button.Text = result;
 			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks! test", count++);
+				//button.Text = string.Format ("{0} clicks! test", count++);
+                //var funcResult = PortableCodeLib.MyClass.SendTestRequest();
+                //button.Text = button.Text + PortableCodeLib.MyClass.callResult.ToString();
+                portableclass.TestWebSrv();
+
 			};
-		}
+
+        }
 	}
 }
 

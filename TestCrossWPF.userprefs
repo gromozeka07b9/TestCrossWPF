@@ -1,16 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Q4EIQSVCNBG6D6ZL" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AppAndroid\MainActivity.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Program Files (x86)\MSBuild\Xamarin\Android\Xamarin.Android.Common.targets">
     <Files>
+      <File FileName="AppAndroid\MainActivity.cs" Line="1" Column="1" />
+      <File FileName="..\..\Program Files (x86)\MSBuild\Xamarin\Android\Xamarin.Android.Common.targets" Line="2" Column="2" />
+      <File FileName="SharedCodeLib\SharedCodeLib\TestClass.cs" Line="1" Column="1" />
       <File FileName="PortableCodeLib\MyClass.cs" Line="1" Column="1" />
-      <File FileName="AppAndroid\MainActivity.cs" Line="14" Column="14" />
-      <File FileName="AppWPF\App.xaml" Line="1" Column="1" />
-      <File FileName="AppWPF\App.xaml.cs" Line="1" Column="1" />
+      <File FileName="c:\git.tests\TestCrossWPF\PortableCodeLib\Service1.cs" Line="30" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\git.tests\TestCrossWPF\PortableCodeLib\Service References\DailyInfo\Reference.cs" line="324" column="23" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.AppAndroid AndroidDeviceId-Debug="Q4EIQSVCNBG6D6ZL" />
 </Properties>
